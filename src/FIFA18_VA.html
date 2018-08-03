@@ -14,7 +14,9 @@
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="style/style.css" 						rel="stylesheet" >
 
-	<script type="text/javascript" src="vendor/d3.js"></script>
+	<script type="text/javascript" src="vendor/d3js/d3.js"></script>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="vendor/radar-chart-d3/radar-chart.min.js"></script>
 </head>
 
 <body>
@@ -37,7 +39,7 @@
 					</div>
 
 					<div class="col-5  section__2_1_2__   canvas_spiderchart">
-						2.1.2
+							<button onclick="newRadar();" style='float:left'>Press Me!</button>
 					</div>
 				</div>
 				
@@ -85,8 +87,21 @@
 			var PC_box_height = PC_box.offsetHeight;
 			var PC_box_width  = PC_box.offsetWidth;
 
-		// 
-
+			// Spider Chart
+			function newRadar(){
+			data = [];
+			for(var i=0; i<3; i++){
+				data.push([
+					{axis: "strength", value: Math.floor((Math.random()*100)+1)}, 
+					{axis: "intelligence", value: Math.floor((Math.random()*100)+1)}, 
+					{axis: "charisma", value: Math.floor((Math.random()*100)+1)}, 
+					{axis: "dexterity", value: Math.floor((Math.random()*100)+1)},  
+					{axis: "luck", value: Math.floor((Math.random()*100)+1)}
+					])
+			}
+			RadarChart.draw(".canvas_spiderchart", data);
+			}
+			newRadar();
 
 
 		
@@ -97,6 +112,7 @@
 	<!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	
 </body>
 
 </html>
