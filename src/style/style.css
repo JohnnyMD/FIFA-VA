@@ -1,6 +1,60 @@
 html {
-    width: 100%;
-    height: auto;
-    background-color: #FCFCFC;
-    -webkit-font-smoothing: antialiased;
+	width                 : 100%;
+	height                : auto;
+	background-color      : #FCFCFC;
+	-webkit-font-smoothing: antialiased;
+	
+	padding               : 0px;
+	margin                : 0px;
 }
+
+
+.canvas_box {
+
+}
+
+.section__1__ {
+	background-color: red; 
+	height          : 100vh;	
+}
+
+	.canvas_players_list {
+
+	}
+
+
+.section__2__{
+	background-color: blue; 
+	height          : 100vh;
+}
+
+	.section__2_1__ {
+		background-color: purple; 
+		height          : 65vh;
+	}
+		
+		.section__2_1_1__ {
+			background-color: black;
+		}
+			.canvas_scatterplot {
+
+			} 
+
+
+		.section__2_1_2__ {
+			background-color: white;
+		}
+			.canvas_spiderchart {
+ù
+			}
+
+
+	.section__2_2__ {
+		background-color: orange; 
+		height          : 35vh;	
+	}
+
+		/* Parallel coordinates canvas*/
+		.canvas_parcoor {
+
+		}
