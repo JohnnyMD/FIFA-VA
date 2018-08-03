@@ -59,29 +59,33 @@
 					selector: elem selector string;
 				
 				Return value:
-
+					box of the element (box.offsetWidth() , box.offsetHeight)
 			 */
 			return document.querySelector($selector);
 		}
 
-		var PL_box        = document.querySelector('.canvas_players_list');
-		var PL_box_height = PL_box.offsetHeight;
-		var PL_box_width  = PL_box.offsetWidth;
+		// get dimensions of the main sections: 
+			// Players List dimensions
+			var PL_box        = document.querySelector('.canvas_players_list');
+			var PL_box_height = PL_box.offsetHeight;
+			var PL_box_width  = PL_box.offsetWidth;
 
-		// Scatterplot dimensions:
-		var SP_box        = document.querySelector('.canvas_scatterplot');
-		var SP_box_height = SP_box.offsetHeight;
-		var SP_box_width  = SP_box.offsetWidth;
+			// Scatterplot dimensions:
+			var SP_box        = document.querySelector('.canvas_scatterplot');
+			var SP_box_height = SP_box.offsetHeight;
+			var SP_box_width  = SP_box.offsetWidth;
 
-		// Spider Chart dimensions:
-		var SC_box        = document.querySelector('.canvas_spiderchart');
-		var SC_box_height = SC_box.offsetHeight;
-		var SC_box_width  = SC_box.offsetWidth;
+			// Spider Chart dimensions:
+			var SC_box        = document.querySelector('.canvas_spiderchart');
+			var SC_box_height = SC_box.offsetHeight;
+			var SC_box_width  = SC_box.offsetWidth;
 
-		// Parallel coordinates dimensions:
-		var PC_box        = document.querySelector('.canvas_parcoor');
-		var PC_box_height = PC_box.offsetHeight;
-		var PC_box_width  = PC_box.offsetWidth;
+			// Parallel coordinates dimensions:
+			var PC_box        = document.querySelector('.canvas_parcoor');
+			var PC_box_height = PC_box.offsetHeight;
+			var PC_box_width  = PC_box.offsetWidth;
+
+		// 
 
 
 
