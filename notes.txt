@@ -1,0 +1,3 @@
+- Eliminated attributes: 'Special', 'ID' (inside FIFA system - not usefull for our application);
+
+- 
